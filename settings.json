@@ -1,0 +1,343 @@
+{
+  // "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "off",
+  "python.pythonPath": "/usr/bin/python",
+  "python.linting.flake8Enabled": true,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc -std=c11 -Wall -Wextra -pedantic -lm $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "/usr/local/bin/python3",
+    "perl": "perl",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "kotlin": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell"
+  },
+  "editor.fontLigatures": true,
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": true,
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#945bc4",
+    "list.activeSelectionForeground": "#FF7042",
+    "list.inactiveSelectionForeground": "#FF7042",
+    "list.highlightForeground": "#FF7042",
+    "scrollbarSlider.activeBackground": "#FF704250",
+    "editorSuggestWidget.highlightForeground": "#FF7042",
+    "textLink.foreground": "#FF7042",
+    "progressBar.background": "#FF7042",
+    "pickerGroup.foreground": "#FF7042",
+    "tab.activeBorder": "#FF7042",
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f",
+    "activityBar.activeBackground": "#65c89b",
+    "activityBar.activeBorder": "#945bc4",
+    "activityBar.background": "#65c89b",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.border": "#42b883",
+    "statusBarItem.hoverBackground": "#359268",
+    "titleBar.activeBackground": "#42b883",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.border": "#42b883",
+    "titleBar.inactiveBackground": "#42b88399",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "files.autoSaveDelay": 1000,
+  "vim.hlsearch": true,
+  "vim.startInInsertMode": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "git.enableSmartCommit": true,
+  "vim.disableExtension": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "editor.renderWhitespace": "none",
+  "files.trimTrailingWhitespace": true,
+  "extensions.ignoreRecommendations": false,
+  "breadcrumbs.enabled": true,
+  "window.zoomLevel": 0,
+  "terminal.integrated.fontSize": 13,
+  "activitusbar.activeColour": "#FF7042",
+  "activitusbar.inactiveColour": "#85C0CE",
+  "terminal.integrated.rendererType": "dom",
+  "editor.formatOnSave": false,
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "prettier.semi": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "window.restoreWindows": "none",
+  "vim.leader": ",",
+  "vim.statusBarColorControl": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [ "<leader>", "h" ],
+      "commands": [ ":nohl", ]
+    },
+    {
+        "before": [ "<space>" ],
+        "after": [ "/" ]
+    },
+    {
+      "before": ["Z", "Z"],
+      "commands": [":wq"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["<leader>", "z"],
+      "commands": ["workbench.action.toggleZenMode"]
+    },
+    {
+            "before": ["g", "u"],
+            "commands": [
+              "editor.action.referenceSearch.trigger"
+            ]
+        },
+{
+            "before": ["g", "s"],
+            "commands": [
+              "editor.action.showDefinitionPreviewHover"
+            ]
+        }
+  ],
+  "cSpell.userWords": [
+    "DMBS",
+    "FSAs",
+    "NDFSA",
+    "RFSA",
+    "SUBQUERYING",
+    "Subqueries",
+    "Togglable",
+    "Visualise",
+    "optimised",
+    "pestel"
+  ],
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "editor.tabSize": 2
+  },
+  "cSpell.enableFiletypes": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pub",
+    "restructuredtext",
+    "rust",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yml"
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  // in USER SETTINGS add the following
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "--shell-escape", // added arg to default
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "--shell-escape", // added arg to default
+        "-synctex=1",
+        "-interaction=nonstopmode"//,
+        // "-file-line-error",
+        // "%DOC%"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": [
+        "%DOCFILE%"
+      ]
+    }
+  ],
+  "prolog.executablePath": "/usr/local/bin/swipl",
+  "python.venvFolders": [
+    "envs",
+    ".pyenv",
+    ".direnv",
+    "/Users/matt/Library/Caches/pypoetry/virtualenvs/"
+  ],
+  "markdown-preview-enhanced.latexEngine": "LuaLaTeX",
+  "python.testing.unittestEnabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.pylintUseMinimalCheckers": false,
+  "editor.fontFamily": "Monaco, Fira Code, Menlo, 'Courier New', monospace",
+  "python.dataScience.jupyterInterruptTimeout": 10002,
+  "ruby.intellisense": "rubyLocate",
+  "ruby.useLanguageServer": true,
+  "python.jediEnabled": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  "cquery.highlighting.enabled.types": true,
+  "cquery.highlighting.enabled.freeStandingFunctions": true,
+  "cquery.highlighting.enabled.memberFunctions": true,
+  "cquery.highlighting.enabled.freeStandingVariables": true,
+  "cquery.highlighting.enabled.memberVariables": true,
+  "cquery.highlighting.enabled.namespaces": true,
+  "cquery.highlighting.enabled.macros": true,
+  "cquery.highlighting.enabled.enums": true,
+  "cquery.highlighting.enabled.typeAliases": true,
+  "cquery.highlighting.enabled.enumConstants": true,
+  "cquery.highlighting.enabled.staticMemberFunctions": true,
+  "cquery.highlighting.enabled.parameters": true,
+  "cquery.highlighting.enabled.templateParameters": true,
+  "cquery.highlighting.enabled.staticMemberVariables": true,
+  "cquery.highlighting.enabled.globalVariables": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [],
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.cppStandard": "c++17",
+  "[c]": {
+    // "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.tabSize": 2
+  },
+  "C_Cpp.clang_format_fallbackStyle": "Chromium",
+  "C_Cpp.default.intelliSenseMode": "clang-x64",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "activitusbar.searchViewInPanel": true,
+  "activitusbar.views": [
+    {
+      "name": "explorer",
+      "octicon": "file-text"
+    },
+    {
+      "name": "search",
+      "octicon": "search"
+    },
+    {
+      "name": "scm",
+      "octicon": "repo-forked"
+    },
+    {
+      "name": "debug",
+      "octicon": "bug"
+    },
+    {
+      "name": "extensions",
+      "octicon": "package"
+    },
+    {
+      "name": "extension.gitlens",
+      "octicon": "telescope"
+    },
+    {
+      "name": "extension.test",
+      "octicon": "beaker"
+    }
+  ],
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "C_Cpp.updateChannel": "Insiders",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "maven.executable.path": "/usr/local/bin/mvn",
+  "java.semanticHighlighting.enabled": true,
+  "customizeUI.activityBar": "regular",
+  "eslint.alwaysShowStatus": true,
+  "prettier.singleQuote": true,
+  "rest-client.enableTelemetry": false,
+  "rest-client.previewColumn": "current",
+  "rest-client.requestNameAsResponseTabTitle": true,
+  "cSpell.diagnosticLevel": "Hint",
+  "vim.highlightedyank.enable": true,
+  "vim.vimrc.enable": true,
+  "vim.sneak": true,
+  "vim.easymotion": true,
+}
